@@ -1,0 +1,18 @@
+{
+
+  "content_scripts": [{
+    "matches": ["*://player.twitch.tv/*"],
+    "js": ["js/chat-inserter.js"],
+    "run_at": "document_end"
+  }],
+
+  "description": "Add's twitch chat to twitch popout videos.",
+  "icons": {
+    "128": "128.png"
+  },
+  "manifest_version": 2,
+  "name": "Twitch popout with chat",
+  "permissions": ["*://player.twitch.tv/*"],
+  "version": "0.0.2",
+  "web_accessible_resources": ["js/chat-inserter.js", "css/chat-style.css"]
+}
